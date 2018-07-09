@@ -1,0 +1,9 @@
+<agm-map [latitude]="lat" [longitude]="lon" [zoom]="zoom" (mapClick)="onChoseLocation($event)">
+  <agm-marker [latitude]="lat" [longitude]="lon"></agm-marker>
+  <agm-circle class="circle" [latitude]="lat" [longitude]="lon" [radius]="accu"></agm-circle>
+</agm-map>
+
+
+<button (click)="track()">
+  show current position
+</button>
